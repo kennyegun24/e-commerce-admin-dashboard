@@ -39,6 +39,9 @@
   padding: 1vw;
   width: 100%;
   font-size: 1vw;
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
 }
 
 .logoutButton {
