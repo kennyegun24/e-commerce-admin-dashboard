@@ -1,8 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import userSlice from './user/user'
 import allUsersSlice from './allUsers/allusers'
-// import storeSlice from './store/store'
-// import orderSlice from './order/order'
 import {
   persistStore,
   persistReducer,
@@ -14,6 +12,9 @@ import {
   REGISTER
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
+import allOrders from './allOrders/allOrders';
+import allProducts from './allProducts/allProducts';
+import allStores from './allStores/allStores';
 
 const persistConfig = {
   key: 'root',
@@ -25,9 +26,10 @@ const persistedReducer = persistReducer(persistConfig, userSlice)
 export const store = configureStore({
   reducer: {
     user: persistedReducer,
-    allUsers: allUsersSlice
-    // store: storeSlice,
-    // order: orderSlice,
+    allUsers: allUsersSlice,
+    allOrders: allOrders,
+    allProducts: allProducts,
+    allStores: allStores
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
