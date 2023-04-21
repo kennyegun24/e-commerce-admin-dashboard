@@ -9,7 +9,15 @@ const AllUsers = () => {
     const columns = [
         { field: 'id', headerName: 'ID', width: 150 },
         { field: 'name', headerName: 'User Name', width: 300 },
-        { field: 'email', headerName: 'Email Address', width: 400 }
+        { field: 'email', headerName: 'Email Address', width: 400 },
+        {
+            headerName: 'Delete',
+            renderCell: (params) => (
+                <button onClick={() => console.log(params)} style={{ background: 'green', border: 'none', borderRadius: '6px', color: '#fff', padding: '0.5rem' }}>Delete</button>
+            ),
+            sortable: false,
+            width: 120
+        }
     ]
     return (
         <div style={{ height: '100%', width: '100%' }}>

@@ -10,11 +10,17 @@ const AllStores = () => {
         { field: 'id', headerName: 'ID', width: 150 },
         { field: 'store_name', headerName: 'Store Name', width: 250 },
         { field: 'email', headerName: 'Email Address', width: 300 },
-        { field: 'total_sold', headerName: 'Total Sold', width: 300 },
-        { field: 'store_value', headerName: 'Store Value', width: 300 }
+        { field: 'total_sold', headerName: 'Total Sold', width: 150 },
+        { field: 'store_value', headerName: 'Store Value', width: 150 },
+        {
+            headerName: 'Delete',
+            renderCell: (params) => (
+                <button onClick={() => console.log(params)} style={{ background: 'green', border: 'none', borderRadius: '6px', color: '#fff', padding: '0.5rem' }}>Delete</button>
+            ),
+            sortable: false,
+            width: 120
+        }
     ]
-
-    console.log(allStores)
 
     return (
         <div style={{ height: '100%', width: '100%' }}>
