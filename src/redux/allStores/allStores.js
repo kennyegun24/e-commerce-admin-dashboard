@@ -1,36 +1,36 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const getAllUsers = createAsyncThunk('getUser/getAllUsers', async (TOKEN) => {
+export const getAllStores = createAsyncThunk('getUser/getAllStores', async (TOKEN) => {
     const BASE_URL = 'http://localhost:3000/api/v1'
     const userRequest = axios.create({
         baseURL: BASE_URL,
         headers: { 'Authorization': `Bearer ${TOKEN}` }
     })
-    const get = await userRequest.get('admin/all_users')
+    const get = await userRequest.get('admin/all_stores')
     delete get.headers
     return get.data
 })
 
-const allUsersSlice = createSlice({
-    name: 'allUsers',
+const allStoresSlice = createSlice({
+    name: 'allStores',
     initialState: {
-        allUsers: [],
+        allStores: [],
         status: null
     },
     reducers: {},
     extraReducers(reducer) {
         reducer
-            .addCase(getAllUsers.pending, (state) => {
+            .addCase(getAllStores.pending, (state) => {
                 const isFulfilled = state;
                 isFulfilled.status = 'Pending';
             })
-            .addCase(getAllUsers.fulfilled, (state, action) => {
+            .addCase(getAllStores.fulfilled, (state, action) => {
                 const isFulfilled = state;
                 isFulfilled.status = 'Fulfilled';
-                isFulfilled.allUsers = action.payload.users;
+                isFulfilled.allStores = action.payload.stores;
             })
     }
 })
 
-export default allUsersSlice.reducer
+export default allStoresSlice.reducer
