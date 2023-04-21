@@ -28,7 +28,7 @@ const AddCategory = () => {
     return (
         <FormDiv>
             <Form>
-                <H1>Login to your account</H1>
+                <H1>Add a new category</H1>
                 <Input onChange={(e) => setCategoryName(e.target.value)} placeholder='Enter email' />
                 <Input onChange={(e) => setImage(e.target.value)} placeholder='Enter password' />
                 <FormBtn type='submit' onClick={loginUser}>Login</FormBtn>

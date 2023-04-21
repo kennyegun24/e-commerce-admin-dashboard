@@ -33,7 +33,7 @@ const AddStore = () => {
     return (
         <FormDiv>
             <Form>
-                <H1>Login to your account</H1>
+                <H1>Add Store</H1>
                 <Input onChange={(e) => setStoreName(e.target.value)} placeholder='Enter name' type="text" />
                 <Input onChange={(e) => setImage(e.target.value)} placeholder='enter image' type='text' />
                 <Input onChange={(e) => setPassword(e.target.value)} placeholder='Enter password' type="password" />

@@ -46,6 +46,7 @@ const AddProduct = () => {
     return (
         <FormDiv>
             <Form>
+                <H1>Add a new product</H1>
                 <select onChange={(e) => setCategoryId(e.target.value)} name="" id="">
                     <option  >Select a category</option>
                     {allCategories.map((cat) => (
@@ -58,7 +59,6 @@ const AddProduct = () => {
                         <option value={cat.id}>{cat.store_name}</option>
                     ))}
                 </select>
-                <H1>Login to your account</H1>
                 <Input onChange={(e) => setName(e.target.value)} placeholder='Enter name' type="text" />
                 <Input onChange={(e) => setImage(e.target.value)} placeholder='enter image' type='text' />
                 <Input onChange={(e) => setSize(e.target.value)} placeholder='Enter size' type="text" />
