@@ -11,17 +11,18 @@
   flex-direction: column;
   height: 100vh;
   font-family: sans-serif;
+  overflow-y: hidden;
 }
 
 .routes {
   display: flex;
-  height: 100%;
-  overflow: hidden;
+  height: 95%;
 }
 
 .navRoutes {
   flex: 6;
   width: 80%;
+  height: 100%;
   border: 1px solid #111;
 }
 

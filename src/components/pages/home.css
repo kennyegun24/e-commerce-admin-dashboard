@@ -3,13 +3,12 @@
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    /* overflow: auto; */
     padding: 1rem;
 }
 
 .homeMainDiv {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     overflow: auto;
 }
 
