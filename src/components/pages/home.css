@@ -3,13 +3,12 @@
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    /* overflow: auto; */
     padding: 1rem;
 }
 
 .homeMainDiv {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     overflow: auto;
 }
 
@@ -55,7 +54,6 @@
     border: 4px solid rgba(12, 117, 158, 0.89);
     border-right: 4px solid #fff;
     border-radius: 50%;
-    /* transition: 2s ease-in-out; */
     animation: 1s rotate linear infinite;
 }
 
@@ -69,7 +67,18 @@
     }
 }
 
-@media (max-width: 900px) and (min-width: 400px) {
+@media (max-width: 650px) and (min-width: 200px) {
+    .chartCompDiv {
+        height: 40%;
+    }
+
+    .chartDiv {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 900px) and (min-width: 651px) {
     .chartCompDiv {
         height: 30%;
     }
