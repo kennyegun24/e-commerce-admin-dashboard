@@ -63,10 +63,10 @@ const AddProduct = () => {
                 <Input onChange={(e) => setImage(e.target.value)} placeholder='enter image' type='text' />
                 <Input onChange={(e) => setSize(e.target.value)} placeholder='Enter size' type="text" />
                 <Input onChange={(e) => setColor(e.target.value)} placeholder='Enter color' type="text" />
-                <Input onChange={(e) => setDescription(e.target.value)} placeholder='Enter color' type="text" />
-                <Input onChange={(e) => setDetails(e.target.value)} placeholder='Enter color' type="text" />
-                <Input onChange={(e) => setPrice(e.target.value)} placeholder='Enter color' type="text" />
-                <Input onChange={(e) => setInstock(e.target.value)} placeholder='Enter color' type="text" />
+                <Input onChange={(e) => setDescription(e.target.value)} placeholder='Enter desc...' type="text" />
+                <Input onChange={(e) => setDetails(e.target.value)} placeholder='Enter details...' type="text" />
+                <Input onChange={(e) => setPrice(e.target.value)} placeholder='Enter price...' type="text" />
+                <Input onChange={(e) => setInstock(e.target.value)} placeholder='Enter stocks' type="text" />
 
                 <FormBtn type='submit' onClick={loginUser}>Login</FormBtn>
                 {err && setTimeout(() => { setErr(null) }, 5000) && <span style={{ color: 'red', fontWeight: '600' }}>{err}</span>}

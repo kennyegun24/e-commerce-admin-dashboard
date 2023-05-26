@@ -9,6 +9,8 @@ export const Form = styled.form`
   width: 30%;
   padding: 1rem;
   gap: 1rem;
+  max-height: 80vh;
+  overflow: auto;
   @media screen and (max-width: 767px) {
       padding: 1.5rem;
       width: 70%
@@ -19,6 +21,7 @@ export const FormDiv = styled.div`
   display: flex;
   justify-content: center;
   height: 100vh;
+  overflow: auto;
   align-items: center;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 `

@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const getAllStores = createAsyncThunk('getUser/getAllStores', async (TOKEN) => {
-    const BASE_URL = 'http://localhost:3000/api/v1'
+    const BASE_URL = 'http://localhost:4000/api/v1'
     const userRequest = axios.create({
         baseURL: BASE_URL,
         headers: { 'Authorization': `Bearer ${TOKEN}` }

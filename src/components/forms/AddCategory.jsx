@@ -29,8 +29,8 @@ const AddCategory = () => {
         <FormDiv>
             <Form>
                 <H1>Add a new category</H1>
-                <Input onChange={(e) => setCategoryName(e.target.value)} placeholder='Enter email' />
-                <Input onChange={(e) => setImage(e.target.value)} placeholder='Enter password' />
+                <Input onChange={(e) => setCategoryName(e.target.value)} placeholder='Enter name' />
+                <Input onChange={(e) => setImage(e.target.value)} placeholder='Enter image' />
                 <FormBtn type='submit' onClick={loginUser}>Login</FormBtn>
                 {err && setTimeout(() => { setErr(null) }, 5000) && <span style={{ color: 'red', fontWeight: '600' }}>{err}</span>}
                 {success && setTimeout(() => { setSuccess(null) }, 5000) && <span style={{ color: 'green', fontWeight: '600' }}>{success}</span>}

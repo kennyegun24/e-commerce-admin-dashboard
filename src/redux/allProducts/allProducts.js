@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const getAllProducts = createAsyncThunk('getUser/getAllProducts', async (TOKEN) => {
-    const BASE_URL = 'http://localhost:3000/api/v1'
+    const BASE_URL = 'http://localhost:4000/api/v1'
     const userRequest = axios.create({
         baseURL: BASE_URL,
         headers: { 'Authorization': `Bearer ${TOKEN}` }
@@ -13,7 +13,7 @@ export const getAllProducts = createAsyncThunk('getUser/getAllProducts', async (
 })
 
 export const getAllCategories = createAsyncThunk('getUser/getAllCategories', async (TOKEN) => {
-    const BASE_URL = 'http://localhost:3000/api/v1'
+    const BASE_URL = 'http://localhost:4000/api/v1'
     const userRequest = axios.create({
         baseURL: BASE_URL,
         headers: { 'Authorization': `Bearer ${TOKEN}` }
@@ -24,7 +24,7 @@ export const getAllCategories = createAsyncThunk('getUser/getAllCategories', asy
 })
 
 export const createCategory = createAsyncThunk('create/category', async ({ TOKEN, category }) => {
-    const BASE_URL = 'http://localhost:3000/api/v1'
+    const BASE_URL = 'http://localhost:4000/api/v1'
     const userRequest = axios.create({
         baseURL: BASE_URL,
         headers: { 'Authorization': `Bearer ${TOKEN}` }
@@ -34,7 +34,7 @@ export const createCategory = createAsyncThunk('create/category', async ({ TOKEN
 })
 
 export const createStore = createAsyncThunk('create/category', async ({ TOKEN, store }) => {
-    const BASE_URL = 'http://localhost:3000/api/v1'
+    const BASE_URL = 'http://localhost:4000/api/v1'
     const userRequest = axios.create({
         baseURL: BASE_URL,
         headers: { 'Authorization': `Bearer ${TOKEN}` }
@@ -44,7 +44,7 @@ export const createStore = createAsyncThunk('create/category', async ({ TOKEN, s
 })
 
 export const createProduct = createAsyncThunk('create/category', async ({ TOKEN, product }) => {
-    const BASE_URL = 'http://localhost:3000/api/v1'
+    const BASE_URL = 'http://localhost:4000/api/v1'
     const userRequest = axios.create({
         baseURL: BASE_URL,
         headers: { 'Authorization': `Bearer ${TOKEN}` }
