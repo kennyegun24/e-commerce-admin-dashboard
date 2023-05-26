@@ -14,9 +14,9 @@ Only an admin is allowed to perform some operations such as...
 - Admin can see stores based on total worth, total sales made, total amount of goods in.
 ## Demo#
 
-<!-- [screen-capture (1).webm]() -->
+[screen-capture (1).webm](https://github.com/kennyegun24/e-commerce-admin-dashboard/assets/109461921/a2d6e3cd-fa5e-49f2-8f3b-c092f0ccd345)
 
-<video src='https://github.com/kennyegun24/e-commerce-admin-dashboard/assets/109461921/a2d6e3cd-fa5e-49f2-8f3b-c092f0ccd345' width='400' />
+<!-- <video src='' /> -->
 
 Insert gif or link to demo
 
