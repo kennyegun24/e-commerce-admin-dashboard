@@ -12,9 +12,11 @@ Only an admin is allowed to perform some operations such as...
 - All products.
 - Admin can see charts describing the metrics of the store and how well or bad sales are.
 - Admin can see stores based on total worth, total sales made, total amount of goods in.
-## Demo
+## Demo#
 
-[screen-capture (1).webm](https://github.com/kennyegun24/e-commerce-admin-dashboard/assets/109461921/a2d6e3cd-fa5e-49f2-8f3b-c092f0ccd345)
+<!-- [screen-capture (1).webm]() -->
+
+<video src='https://github.com/kennyegun24/e-commerce-admin-dashboard/assets/109461921/a2d6e3cd-fa5e-49f2-8f3b-c092f0ccd345' width='400' />
 
 Insert gif or link to demo
 
@@ -28,13 +30,8 @@ Install my-project with npm
   npm start
 ```
 
-    
 ## Authors
 
 - [@Kennyegun24](https://www.github.com/kennyegun24)
 
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
